@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "target": "es2016",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "strict": false,
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      },
+      {
+        "name": "ts-lit-plugin"
+      }
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "lib"
+  ]
+}
