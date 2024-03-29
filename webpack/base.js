@@ -308,7 +308,7 @@ const resolve = (
   const { nodeModulesPath, resolveModules = [], srcPath } = profile;
 
   return {
-    symlinks: true,
+    symlinks: false,
     modules: [
       ...resolveModules,
       srcPath,
