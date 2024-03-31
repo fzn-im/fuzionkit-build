@@ -49,6 +49,7 @@ const modules = (
       },
       {
         test: /\.(sa|sc|c)ss$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         oneOf: [
           {
             resourceQuery: /lit/,
@@ -101,6 +102,7 @@ const modules = (
       },
       {
         test: /\.(png|jpg|gif|woff|woff2)/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         dependency: { not: [ 'url' ] },
         use: [
           {
@@ -115,6 +117,7 @@ const modules = (
       },
       {
         test: /\.(ttf|eot|svg|otf)/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         dependency: { not: [ 'url' ] },
         use: [
           {
@@ -127,6 +130,7 @@ const modules = (
       },
       {
         test: /\.tsx?$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         oneOf: [
           {
             resourceQuery: /worker/,
@@ -179,6 +183,7 @@ const modules = (
           },
           {
             test: /\.tsx?$/,
+            exclude: path.resolve(__dirname, './node_modules/'),
             use: [
               {
                 loader: 'babel-loader',
@@ -206,6 +211,7 @@ const modules = (
       },
       {
         test: /\.m?jsx?$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         oneOf: [
           {
             use: [
@@ -253,6 +259,7 @@ const modules = (
       },
       {
         test: /\.hbs$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         use: [
           {
             loader: 'handlebars-loader',
@@ -268,15 +275,18 @@ const modules = (
       },
       {
         test: /\.mp3$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         loader: 'file-loader',
       },
       {
         test: /\.pug$/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         include: srcPath,
         loader: 'pug-loader',
       },
       {
         resourceQuery: /inline/,
+        exclude: path.resolve(__dirname, './node_modules/'),
         type: 'asset/inline',
       },
     ],

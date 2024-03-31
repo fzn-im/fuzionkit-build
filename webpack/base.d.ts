@@ -10,9 +10,9 @@ export interface BuildProfile {
   tsconfigPath?: string;
 }
 
-export function modules(buildProfile: BuildProfile);
+export function modules(buildProfile: BuildProfile): webpack.Configuration['modules'];
 export function plugins(
   buildProfile: BuildProfile,
   plugins: webpack.Configuration['plugins'],
-);
-export function resolve(buildProfile: BuildProfile);
+): webpack.Configuration['plugins'];
+export function resolve(buildProfile: BuildProfile): webpack.Configuration['resolve'];
