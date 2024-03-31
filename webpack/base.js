@@ -324,7 +324,9 @@ const resolve = (
       srcPath,
       nodeModulesPath,
     ],
-    fallback: {},
+    fallback: {
+      'process/browser': require.resolve('process/browser'),
+    },
     extensions: [ '.js', '.jsx', '.ts', '.tsx', '.mjs' ],
   };
 };
