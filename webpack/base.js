@@ -48,6 +48,14 @@ const modules = (
         ],
       },
       {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
+        resolve: {
+          fullySpecified: false
+        }
+      },
+      {
         test: /\.(sa|sc|c)ss$/,
         exclude: path.resolve(__dirname, './node_modules/'),
         oneOf: [
@@ -324,9 +332,7 @@ const resolve = (
       srcPath,
       nodeModulesPath,
     ],
-    fallback: {
-      'process/browser': 'process/browser',
-    },
+    fallback: {},
     extensions: [ '.js', '.jsx', '.ts', '.tsx', '.mjs' ],
   };
 };
