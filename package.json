@@ -7,7 +7,8 @@
     "*"
   ],
   "exports": {
-    "./webpack/*.js": "./webpack/*.js"
+    "./webpack/*.js": "./webpack/*.js",
+    "./eslint/*.js": "./eslint/*.js"
   },
   "scripts": {
     "lint": "eslint .",
