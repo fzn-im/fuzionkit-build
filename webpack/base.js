@@ -36,8 +36,12 @@ const modules = (
                * @param {string} _url
                * @param {string} resourcePath
                */
+              // filterSourceMappingUrl: (_url, resourcePath) => {
+              //   console.log('url');
+              //
+              // },
               filterSourceMappingUrl: (_url, resourcePath) => {
-                if (/tsee\//i.test(resourcePath)) {
+                if (/tseep/i.test(resourcePath)) {
                   return false;
                 }
 
