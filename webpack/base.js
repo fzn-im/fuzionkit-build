@@ -80,6 +80,7 @@ const modules = (
                 options: {
                   api: 'modern-compiler',
                   sassOptions: {
+                    quietDeps: true,
                     includePaths: sassIncludePaths
                       ? sassIncludePaths
                       : [ basePath, srcPath, nodeModulesPath ],
@@ -99,6 +100,7 @@ const modules = (
                 options: {
                   api: 'modern-compiler',
                   sassOptions: {
+                    quietDeps: true,
                     includePaths: sassIncludePaths
                       ? sassIncludePaths
                       : [ basePath, srcPath, nodeModulesPath ],
