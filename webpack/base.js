@@ -78,7 +78,7 @@ const modules = (
               {
                 loader: 'sass-loader',
                 options: {
-                  api: 'modern',
+                  api: 'modern-compiler',
                   sassOptions: {
                     includePaths: sassIncludePaths
                       ? sassIncludePaths
@@ -97,7 +97,7 @@ const modules = (
               {
                 loader: 'sass-loader',
                 options: {
-                  api: 'modern',
+                  api: 'modern-compiler',
                   sassOptions: {
                     includePaths: sassIncludePaths
                       ? sassIncludePaths
