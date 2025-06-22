@@ -65,7 +65,7 @@ const modules = (
               { loader: 'lit-scss-loader', options: { minify: false } },
               { loader: path.resolve(__dirname, './loaders/escape-lit-scss.js') },
               {
-                loader: 'extract-loader',
+                loader: 'extract-loader-5',
                 options: {
                   publicPath: '',
                   sourceMap: true,
