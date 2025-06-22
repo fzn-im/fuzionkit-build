@@ -48,7 +48,7 @@ const modules = (
         ],
       },
       {
-        test: /\.mjs$/,
+        test: /\.m?js$/,
         include: /node_modules/,
         type: 'javascript/auto',
         resolve: {
